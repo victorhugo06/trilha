@@ -1,4 +1,5 @@
 // src/App.jsx
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/Home";
 import Login from "./components/Login";
@@ -13,6 +14,12 @@ import { ToastContainer } from "react-toastify";  // Importa o ToastContainer
 
 function App() {
   const [user] = useAuthState(auth); // Verifica se o usuário está autenticado
+
+  const [pageTitle] = useState('Trilha - Psicologia Comportamental');
+
+  useEffect(() => {
+    document.title = pageTitle;
+  }, [pageTitle]);
 
   return (
     <Router>
