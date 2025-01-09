@@ -44,10 +44,10 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-sky-400">
+    <div className="min-h-screen flex items-center justify-center bg-orange-200">
       {/* Botão para voltar à Landing Page */}
-      <button 
-        onClick={handleBackToHome} 
+      <button
+        onClick={handleBackToHome}
         className="absolute top-4 left-4 px-5 py-3 bg-orange-400 text-white hover:text-gray-600 mb-4"
       >
         Voltar

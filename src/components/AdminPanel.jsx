@@ -18,20 +18,16 @@ const AdminPanel = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside className="w-64 bg-blue-700 text-white flex flex-col items-center py-8">
+      <aside className="w-64 bg-orange-200 shadow-md px-4 text-white flex flex-col items-center py-8">
         {/* Foto do usuário */}
         <div className="w-24 h-24 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
           {/* Ícone de usuário ou foto */}
           <img
-            src="https://via.placeholder.com/150"
+            src="https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-business-men-icon-png-image_4186858.jpg"
             alt="Usuário"
             className="rounded-full"
           />
         </div>
-
-        {/* Nome do usuário (opcional) */}
-        <h2 className="text-lg font-bold mb-8">Bem-vindo!</h2>
-
         {/* Menu de opções */}
         <nav className="flex flex-col w-full">
           <button
@@ -71,7 +67,8 @@ const AdminPanel = () => {
 
       {/* Área Principal */}
       <main className="flex-1 p-8">
-        <h1 className="text-2xl font-bold mb-4">Painel Administrativo</h1>
+        {/* Nome do usuário (opcional) */}
+        <h1 className="text-2xl font-bold mb-4">Bem vindo(a)!</h1>
         <p className="text-gray-600">Selecione uma opção no menu lateral.</p>
       </main>
     </div>

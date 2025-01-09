@@ -18,12 +18,12 @@ const Dashboard = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside className="w-64 bg-blue-700 text-white flex flex-col items-center py-8">
+      <aside className="w-64 bg-orange-200 text-white flex flex-col items-center py-8">
         {/* Foto do usuário */}
         <div className="w-24 h-24 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
           {/* Ícone de usuário ou foto */}
           <img
-            src="https://via.placeholder.com/150"
+            src="https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-business-men-icon-png-image_4186858.jpg"
             alt="Usuário"
             className="rounded-full"
           />
