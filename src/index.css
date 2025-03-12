@@ -1,0 +1,79 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.fc-event {
+  background-color: #5ac8fa;
+  color: black;
+}
+
+a.fc-event:hover {
+  background-color: #3498db;
+}
+
+.fc-event.past-event {
+  background-color: #86efac !important;
+  color: black;
+}
+
+.fc-event.past-event:hover {
+  background-color: #22c55e !important;
+  color: black;
+}
+
+div.fc-daygrid-event-dot {
+  background-color: orange;
+  border-radius: 50%;
+  border: 0.1rem solid black !important;
+  width: 8px;
+  height: 8px;
+}
+
+div.event-done {
+  background-color: #86efac;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #86efac !important;
+  max-width: 90px;
+  max-height: 30px;
+}
+
+div.event-pending {
+  background-color: #5ac8fa;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #5ac8fa !important;
+  max-width: 90px;
+  max-height: 30px;
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #09f;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .fc .fc-header-toolbar .fc-toolbar-chunk:nth-child(1) .fc-today-button {
+    margin-top: 0.2rem;
+  }
+  main .fc .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+    font-size: 14px;
+  }
+  main .fc .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) .fc-button-group {
+    display: grid;
+  }
+
+  div.event-legend {
+    margin-top: 0.5rem;
+    justify-content: start;
+  }
+}
